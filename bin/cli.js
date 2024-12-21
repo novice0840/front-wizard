@@ -1,26 +1,35 @@
 #!/usr/bin/env node
 
+import { fileURLToPath } from "node:url";
+import path from "node:path";
 import fs from "fs-extra";
 import inquirer from "inquirer";
-import path from "node:path";
-import { fileURLToPath } from "node:url";
 import pc from "picocolors";
 
-// __dirname 대체
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// 템플릿 선택
 const TEMPLATES_DIR = path.resolve(__dirname, "../templates");
 
 async function createProject() {
-  // CLI에서 사용자 선택
-  const { template, projectName } = await inquirer.prompt([
+  const { framework, language, styling, projectName } = await inquirer.prompt([
     {
       type: "list",
-      name: "template",
-      message: "Choose a template:",
-      choices: ["react", "vue", "angular"],
+      name: "framework",
+      message: "Choose a framework:",
+      choices: ["react-vite", "react-nextjs"],
+    },
+    {
+      type: "list",
+      name: "language",
+      message: "Choose a language:",
+      choices: ["javaScript", "typeScript"],
+    },
+    {
+      type: "list",
+      name: "styling",
+      message: "Choose a styling:",
+      choices: ["emotion", "styled-components", "tailwindcss", "None"],
     },
     {
       type: "input",
@@ -30,10 +39,24 @@ async function createProject() {
     },
   ]);
 
-  const templateDir = path.join(TEMPLATES_DIR, template);
+  let templateName = framework;
+  if (language === "typeScript") {
+    templateName += "-ts";
+  } else if (language === "javaScript") {
+    templateName += "-js";
+  }
+
+  if (styling === "emotion") {
+    templateName += "-emotion";
+  } else if (styling === "styled-components") {
+    templateName += "-styled-components";
+  } else if (styling === "tailwindcss") {
+    templateName += "-tailwindcss";
+  }
+
+  const templateDir = path.join(TEMPLATES_DIR, templateName);
   const targetDir = path.join(process.cwd(), projectName);
 
-  // 템플릿 복사
   try {
     console.log(pc.cyan(`\nCreating project in ${targetDir}...`));
     await fs.copy(templateDir, targetDir);
