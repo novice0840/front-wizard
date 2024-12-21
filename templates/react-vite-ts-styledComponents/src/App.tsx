@@ -1,10 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import styled from "styled-components";
+
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #bf4f74;
+`;
+
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -28,8 +40,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <Wrapper>
+        <Title>Hello World!</Title>
+      </Wrapper>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

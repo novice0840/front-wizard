@@ -1,30 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import styled, { css } from 'styled-components'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+import styled from "styled-components";
 
-
-const Button = styled.button`
-  background: transparent;
-  border-radius: 3px;
-  border: 2px solid #BF4F74;
-  color: #BF4F74;
-  margin: 0.5em 1em;
-  padding: 0.25em 1em;
-
-  ${props => props.$primary && css`
-    background: #BF4F74;
-    color: white;
-  `}
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #bf4f74;
 `;
 
-const Container = styled.div`
-  text-align: center;
-`
+const Wrapper = styled.section`
+  padding: 4em;
+  background: papayawhip;
+`;
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
@@ -48,10 +40,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-        <Button>Normal Button</Button>
-        <Button $primary>Primary Button</Button>
+      <Wrapper>
+        <Title>Hello World!</Title>
+      </Wrapper>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
