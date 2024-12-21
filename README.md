@@ -15,7 +15,7 @@
 - [x] react-vite-js
 - [x] react-vite-js-emotion
 - [x] react-vite-js-styledComponents
-- [ ] react-vite-js-tailwindcss
+- [x] react-vite-js-tailwindcss
 - [x] react-vite-ts
 - [x] react-vite-ts-emotion
 - [x] react-vite-ts-styledComponents
