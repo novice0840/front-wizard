@@ -4,14 +4,14 @@
 
 ## TODO
 
-- [x] react-next-js
-- [ ] react-next-js-emotion
-- [ ] react-next-js-styledComponents
-- [ ] react-next-js-tailwindcss
-- [ ] react-next-ts
-- [ ] react-next-ts-emotion
-- [ ] react-next-ts-styledComponents
-- [ ] react-next-ts-tailwindcss
+- [x] react-nextjs-js
+- [ ] react-nextjs-js-emotion
+- [ ] react-nextjs-js-styledComponents
+- [x] react-nextjs-js-tailwindcss
+- [ ] react-nextjs-ts
+- [ ] react-nextjs-ts-emotion
+- [ ] react-nextjs-ts-styledComponents
+- [ ] react-nextjs-ts-tailwindcss
 - [x] react-vite-js
 - [x] react-vite-js-emotion
 - [x] react-vite-js-styledComponents
