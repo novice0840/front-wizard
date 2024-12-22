@@ -4,11 +4,13 @@
 
 ## TODO
 
+### 16 종류의 Template 추가
+
 - [x] react-nextjs-js
 - [ ] react-nextjs-js-emotion
 - [ ] react-nextjs-js-styledComponents
 - [x] react-nextjs-js-tailwindcss
-- [ ] react-nextjs-ts
+- [x] react-nextjs-ts
 - [ ] react-nextjs-ts-emotion
 - [ ] react-nextjs-ts-styledComponents
 - [ ] react-nextjs-ts-tailwindcss
@@ -20,3 +22,6 @@
 - [x] react-vite-ts-emotion
 - [x] react-vite-ts-styledComponents
 - [x] react-vite-ts-tailwindcss
+
+- [ ] 입력 받은 프로젝트 이름 Template 코드의 package.json의 name에 넣기
+- [ ] 테스트 코드 작성
