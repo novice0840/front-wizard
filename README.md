@@ -4,7 +4,7 @@
 
 ## TODO
 
-- [ ] react-next-js
+- [x] react-next-js
 - [ ] react-next-js-emotion
 - [ ] react-next-js-styledComponents
 - [ ] react-next-js-tailwindcss
