@@ -13,7 +13,7 @@
 - [x] react-nextjs-ts
 - [ ] react-nextjs-ts-emotion
 - [ ] react-nextjs-ts-styledComponents
-- [ ] react-nextjs-ts-tailwindcss
+- [x] react-nextjs-ts-tailwindcss
 - [x] react-vite-js
 - [x] react-vite-js-emotion
 - [x] react-vite-js-styledComponents
