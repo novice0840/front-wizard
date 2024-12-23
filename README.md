@@ -8,11 +8,11 @@
 
 - [x] react-nextjs-js
 - [ ] react-nextjs-js-emotion
-- [ ] react-nextjs-js-styledComponents
+- [ ] react-nextjs-js-styled-components
 - [x] react-nextjs-js-tailwindcss
 - [x] react-nextjs-ts
 - [ ] react-nextjs-ts-emotion
-- [ ] react-nextjs-ts-styledComponents
+- [ ] react-nextjs-ts-styled-components
 - [x] react-nextjs-ts-tailwindcss
 - [x] react-vite-js
 - [x] react-vite-js-emotion
