@@ -1,6 +1,6 @@
 {
   "name": "front-wizard",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A CLI tool for setting up frontend projects",
   "main": "index.js",
   "bin": {
